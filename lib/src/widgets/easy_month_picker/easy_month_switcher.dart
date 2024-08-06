@@ -46,7 +46,7 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
     return SizedBox(
-      width: screenWidth*0.9,
+      width: screenWidth*0.85,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
