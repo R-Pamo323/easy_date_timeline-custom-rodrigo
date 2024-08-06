@@ -50,6 +50,7 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Text("Hola prueba"),
           Flexible(
             child: IconButton(
               onPressed: () {
