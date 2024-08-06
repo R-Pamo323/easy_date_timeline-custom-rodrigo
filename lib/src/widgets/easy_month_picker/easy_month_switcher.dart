@@ -63,7 +63,7 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
                 color: _isFirstMonth ? Colors.grey : const Color(0xff003E75),
               ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: 5),
            FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(
@@ -72,7 +72,8 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
                 style: widget.style,
               ),
             ),
-          const Spacer(),
+           SizedBox(width: screenWidth * 0.2),
+           
           IconButton(
               onPressed: () {
                 if (_isLastMonth) {
