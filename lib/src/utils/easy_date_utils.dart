@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart' show DateUtils;
+import 'package:intl/intl.dart';
 
 import '../models/models.dart';
 import 'utils.dart';
@@ -21,8 +22,9 @@ abstract class EasyDateUtils {
     for (int month = 1; month <= 12; month++) {
       months.add(
         EasyMonth(
-          name: EasyDateFormatter.shortMonthName(
-              DateTime(date.year, month), locale),
+          /*name: EasyDateFormatter.shortMonthName(
+              DateTime(date.year, month), locale),*/
+              name: DateFormat.MMMM('es').format(date),
           vale: month,
         ),
       );

@@ -46,13 +46,11 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
     return SizedBox(
-      width: screenWidth * 0.3,
+      width: screenWidth,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text("Hola prueba"),
-          Flexible(
-            child: IconButton(
+           IconButton(
               onPressed: () {
                 if (_isFirstMonth) {
                   return;
@@ -62,12 +60,11 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
               },
               icon: Icon(
                 Icons.arrow_back_ios_rounded,
-                color: _isFirstMonth ? Colors.grey : null,
+                color: _isFirstMonth ? Colors.grey : const Color(0xff003E75),
               ),
             ),
-          ),
-          Expanded(
-            child: FittedBox(
+            const SizedBox(width: 10),
+           FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(
                 _yearMonths[_currentMonth].name,
@@ -75,9 +72,8 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
                 style: widget.style,
               ),
             ),
-          ),
-          Flexible(
-            child: IconButton(
+          const Spacer(),
+          IconButton(
               onPressed: () {
                 if (_isLastMonth) {
                   return;
@@ -87,10 +83,10 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
               },
               icon: Icon(
                 Icons.arrow_forward_ios_rounded,
-                color: _isLastMonth ? Colors.grey : null,
+                color: _isLastMonth ? Colors.grey : const Color(0xff003E75),
               ),
             ),
-          ),
+         
         ],
       ),
     );
