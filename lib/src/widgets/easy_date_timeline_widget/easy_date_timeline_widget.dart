@@ -132,14 +132,14 @@ class _EasyDateTimeLineState extends State<EasyDateTimeLine> {
             Padding(
               padding: _headerProps.padding ??
                   const EdgeInsets.only(
-                    left: EasyConstants.timelinePadding * 2,
+                    left: EasyConstants.timelinePadding,
                     right: EasyConstants.timelinePadding,
                     bottom: EasyConstants.timelinePadding,
                   ),
               child: Row(
-                mainAxisAlignment: _headerProps.centerHeader == true
+                /*mainAxisAlignment: _headerProps.centerHeader == true
                     ? MainAxisAlignment.center
-                    : MainAxisAlignment.spaceBetween,
+                    : MainAxisAlignment.spaceBetween,*/
                 children: [
                   SelectedDateWidget(
                     date: focusedDate ?? initialDate,
