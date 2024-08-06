@@ -133,10 +133,11 @@ class _EasyDateTimeLineState extends State<EasyDateTimeLine> {
               padding: _headerProps.padding ??
                   const EdgeInsets.only(
                     left: EasyConstants.timelinePadding,
-                    right: EasyConstants.timelinePadding,
+                    //right: EasyConstants.timelinePadding,
                     bottom: EasyConstants.timelinePadding,
                   ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 /*mainAxisAlignment: _headerProps.centerHeader == true
                     ? MainAxisAlignment.center
                     : MainAxisAlignment.spaceBetween,*/

@@ -24,7 +24,11 @@ abstract final class EasyDateFormatter {
 
   /// Returns the full name of the month of the given date in the specified locale.
   static String fullMonthName(DateTime date, String locale) {
-    return DateFormat("MMMM", locale).format(date);
+    String dateNew  = DateFormat("MMMM", locale).format(date);
+    
+    dateNew = dateNew[0].toUpperCase() + dateNew.substring(1);
+    return dateNew;
+    //return DateFormat("MMMM", locale).format(date);
   }
 
   /// Returns the full date of the given date in the "dd/MM/yyyy" format and the specified locale.
