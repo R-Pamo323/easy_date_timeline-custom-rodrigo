@@ -24,7 +24,8 @@ abstract class EasyDateUtils {
         EasyMonth(
           /*name: EasyDateFormatter.shortMonthName(
               DateTime(date.year, month), locale),*/
-              name: DateFormat.MMMM('es').format(date),
+          //    name: DateFormat.MMMM('es').format(date),
+          name: EasyDateFormatter.fullMonthName(DateTime(date.year, month), locale),
           vale: month,
         ),
       );

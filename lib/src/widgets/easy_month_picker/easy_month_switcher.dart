@@ -72,7 +72,7 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
                 style: widget.style,
               ),
             ),
-           SizedBox(width: screenWidth * 0.5),
+           SizedBox(width: screenWidth * 0.4),
 
           IconButton(
               onPressed: () {
